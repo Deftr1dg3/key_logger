@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+Pipfile
+Pipfile.lock 
+received_loggs
+.gitignore
+.DS*
+.vscode
 
 # C extensions
 *.so
