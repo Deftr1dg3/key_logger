@@ -21,6 +21,7 @@ async def send_data() -> None:
             with data_lock:
                 await client.send_data(DATA.encode('utf-8'))
                 DATA = ''
+            await client.close()
         except Exception as ex:
             await asyncio.sleep(1)
             # print(f'An Exception Occured -> {ex}')
